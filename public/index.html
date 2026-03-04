@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Campus Lost & Found</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">🎒 Campus Lost & Found</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="add.html">Report Item</a>
+<a href="admin.html">Admin</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Find What Was Lost</h1>
+<p>Campus community helping each other recover lost belongings.</p>
+
+<a href="add.html" class="cta">Report Lost Item</a>
+
+</section>
+
+
+<section class="controls">
+
+<input id="search" placeholder="🔍 Search lost items">
+
+<div class="filters">
+<button onclick="filterItems('all')">All</button>
+<button onclick="filterItems('lost')">Lost</button>
+<button onclick="filterItems('found')">Found</button>
+</div>
+
+</section>
+
+
+<section id="items" class="grid"></section>
+
+<script type="module" src="main.js"></script>
+
+</body>
+
+</html>

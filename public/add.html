@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Add Lost / Found Item</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">🎒 Campus Lost & Found</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="add.html">Report Item</a>
+<a href="admin.html">Admin</a>
+</nav>
+
+</header>
+
+
+<section class="form-section">
+
+<div class="form-card">
+
+<h2>Add Lost / Found Item</h2>
+
+<form id="reportForm">
+
+<div class="form-group">
+
+<label>Item Title</label>
+<input id="title" placeholder="Example: Black Wallet">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Description</label>
+<textarea id="description" placeholder="Describe the item"></textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Location</label>
+<input id="location" placeholder="Example: Library">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Type</label>
+
+<select id="category">
+
+<option value="lost">Lost</option>
+<option value="found">Found</option>
+
+</select>
+
+</div>
+
+
+<div id="dropZone" class="drop-zone">
+
+Drag & Drop Image Here
+
+</div>
+
+
+<input type="file" id="image">
+
+
+<img id="preview">
+
+<div class="form-group">
+<label>Date</label>
+<input type="date" id="date">
+</div>
+
+<div class="form-group">
+<label>Contact Info</label>
+<input id="contact" placeholder="Email or Phone">
+</div>
+
+
+<button type="submit" class="primary-btn">
+
+Submit Report
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script type="module" src="add.js"></script>
+
+</body>
+
+</html>
