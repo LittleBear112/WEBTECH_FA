@@ -9,6 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 app.use('/items', require('./items'));
 
 app.use((req, res) => {
