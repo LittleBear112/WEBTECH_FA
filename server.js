@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 
-app.use('/items', require('./routes/items'));
+app.use('/items', require('./items'));
 
 app.use((req, res) => {
     res.status(404).send("404 Not Found");
