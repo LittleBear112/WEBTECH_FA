@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Campus Lost & Found</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Campus Lost & Found</h1>
-    <a href="add.html">Add Item</a>
-    <div id="items"></div>
 
-    <script src="/js/main.js" defer></script>
+<header>
+    <h1>Campus Lost & Found Management System</h1>
+    <a href="add.html" class="btn">+ Add Report</a>
+</header>
+
+<main>
+    <section class="filters">
+        <button onclick="filterItems('all')">All</button>
+        <button onclick="filterItems('Lost')">Lost</button>
+        <button onclick="filterItems('Found')">Found</button>
+    </section>
+
+    <section id="items-container" class="cards">
+        <!-- Cards inserted dynamically -->
+    </section>
+</main>
+
+<script src="main.js" defer></script>
 </body>
 </html>
